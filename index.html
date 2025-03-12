@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/240171d57f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content container flex">
+            <h2 class="title"><a href="/">Where in the world?</a></h2>
+            <p class="theme-changer"><i class="fa-regular fa-moon"></i> Dark Mode</p>
+        </div>
+    </header>
+    <main>
+        <section class="filter-section container flex">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for a country...">
+            </div>
+            <select name="filter-region" id="" class="filter-region">
+                <option value="Filter by Region" hidden>Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </section>
+        <section class="flag-card container flex">
+        </section>
+    </main>
+</body>
+
+</html>

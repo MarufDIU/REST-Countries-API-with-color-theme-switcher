@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-color: #fafafa;
+    --text-color: #111517;
+    --elements-color: #ffffff;
+}
+
+:root.dark{
+    --background-color: #202c37;
+    --text-color: #ffffff;
+    --elements-color: #2b3945;
+}
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: var(--elements-color);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+.header-content{
+    height: 80px;
+}
+
+.title{
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.header-content p{
+    cursor: pointer;
+}
+
+.filter-section{
+    margin-block: 40px;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.search-bar{
+    /* padding: 20px; */
+    padding-left: 24px;
+    background-color: white;
+    width: 600px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: var(--elements-color);
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 20px;
+    background-color: var(--elements-color);
+    color: var(--text-color);
+}
+
+.filter-region{
+    min-width: 20%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: var(--elements-color);
+    color: var(--text-color);
+}
+
+.flag-card{
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
+.card{
+    height: 340px;
+    width: 270px;
+    box-shadow: rgba(0, 80, 100, 0.1) 1px 1px 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--elements-color);
+}
+
+.card:hover{
+    /* background-color: #f3fdff; */
+    background-color: var(--background-color);
+    box-shadow: rgba(2, 120, 150, 0.5) 1px 1px 8px 2px;
+    transform: scale(1.04);
+}
+
+.country-img{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content{
+    flex-direction: column;
+    padding: 25px;
+    align-items: start;
+    gap: 4px;
+}
+
+.country-name{
+    margin-bottom: 12px;
+}
+
+
+@media(max-width: 800px) {
+    .flag-card{
+        justify-content: center;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .header-content p{
+        font-size: 12px;
+    }
+}
